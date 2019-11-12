@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">My title....</title>
+</head>
+<body>
+<div class="header">
+    <div class="header-title">Flowershop</div>
+    <div class="header-user">
+        <div th:text="${fullname}"></div>
+        <div th:text="${email}"></div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="flower">
+        <div class="flower-name">name</div>
+        <div class="flower-smell">name</div>
+        <div class="flower-price">name</div>
+    </div>
+</div>
+
+<div>
+    <img th:src="${picture}" height="100px"/>
+</div>
+
+<div th:text="${userdetails}"></div>
+
+</body>
+</html>
