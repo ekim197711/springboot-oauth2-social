@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title th:text="${title}">My title....</title>
+    <link rel="stylesheet" th:href="@{/css/flower.css}"/>
 </head>
 <body>
 <div class="header">
-    <div class="header-title">Flowershop</div>
+    <div class="header-logo">Flowershop</div>
     <div class="header-user">
+        <div class="header-user-image"><img th:src="${picture}" height="100px"/></div>
         <div th:text="${fullname}"></div>
         <div th:text="${email}"></div>
     </div>
 </div>
 
 <div class="content">
-    <div class="flower">
-        <div class="flower-name">name</div>
-        <div class="flower-smell">name</div>
-        <div class="flower-price">name</div>
+    <div th:each="flower : ${flowers}" class="flower">
+        <div class="flower-name" th:text="${flower.name}">name</div>
+        <div class="flower-right">
+            <div class="flower-smell" th:text="${flower.smell}">name</div>
+            <div class="flower-price" th:text="${flower.price}">name</div>
+        </div>
     </div>
 </div>
 
-<div>
-    <img th:src="${picture}" height="100px"/>
-</div>
-
-<div th:text="${userdetails}"></div>
 
 </body>
 </html>

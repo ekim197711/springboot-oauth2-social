@@ -1,0 +1,81 @@
+body{
+    color: white;
+    /*background: rgb(2,0,36);*/
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+    font-family: Arial;
+    height: 100vh;
+}
+
+.header{
+    border-radius: 10px;
+    font-size: 1.5rem;
+    padding-left:10px;
+    padding-right:10px;
+    background: #ff892d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.header-logo{
+    font-size: 3rem;
+    padding-top:20px;
+    font-family: "Droid Sans Mono";
+}
+.header-user{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.header-user-image{
+    text-align: center;
+}
+.header-user-image img{
+    border-radius: 50%;
+}
+
+.content{
+    font-size: 1.5rem;
+    max-width: 600px;
+    /*padding:10px;*/
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.flower:hover{
+    box-shadow: 15px 15px 5px 0px rgba(0,0,0,0.65);
+}
+.flower{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background: #4290ff;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: 0.3s 0s ease-in;
+}
+
+.flower-name{
+    padding:10px;
+    background: #177f48;
+}
+.flower-right{
+
+    display: flex;
+    flex-direction: column;
+}
+.flower-smell{
+    padding:10px;
+    text-align: center;
+    background: #7f2273;
+}
+
+.flower-price{
+    padding:10px;
+    text-align: center;
+    background: #7f1537;
+}
